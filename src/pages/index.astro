@@ -1,16 +1,69 @@
 ---
-
+import Layout from "../layouts/Layout.astro";
+const page = {
+	title: "Portfolios Web",
+	desc: "Here the description home page"
+}
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title={page.title} desc={page.desc}>
+	<div class="row">
+		<maim class="main">
+			<div class="icons-portfolio">
+				<a href="/minimalist/">
+					<div class="content">
+						<span>minimalist portfolio json</span>
+						<img src="cover.png" alt="">
+					</div>
+					<img src="phone.png" alt="">
+				</a>
+				<a href="/simple/">
+					<div class="content">
+						<span>simple portfolio</span>
+						<img src="cover.png" alt="">
+					</div>
+					<img src="phone.png" alt="">
+				</a>
+				<a href="/simple/">
+					<div class="content">
+						<span>simple portfolio</span>
+						<img src="cover.png" alt="">
+					</div>
+					<img src="phone.png" alt="">
+				</a>
+				
+			</div>
+		</maim>
+	</div>
+</Layout>
+
+<style>
+	.icons-portfolio{
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 1rem;
+	}
+	a{
+		background: #eee;
+		padding: 1rem;
+		border: 1px solid #ccc;	
+		border-radius: 0.5rem;
+		display: flex;
+		gap: 1rem;
+		img{
+			width: 20%;
+		}
+	}
+	.content{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 1rem;
+		span{
+			text-transform: capitalize;
+		}
+		img{
+			width: 100%;
+		}
+	}
+</style>
