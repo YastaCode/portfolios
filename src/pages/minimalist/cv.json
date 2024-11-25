@@ -2,7 +2,7 @@
     "basics": {
       "name": "Jesús Córdova Lizano",
       "label": "Front-End Developer with more than 15 years of experience & Programming Content Creator",
-      "image": "/me.jpg",
+      "image": "../me.jpg",
       "email": "jescordova@gmail.com",
       "phone": "+32 479069836",
       "url": "https://yasta-code.com",
