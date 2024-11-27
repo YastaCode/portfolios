@@ -52,4 +52,17 @@ const {title, desc} = Astro.props;
         margin: 0;
         text-wrap: pretty;
     }
+    @media print {
+        .no-print{
+            display: none !important;
+        }
+    }
+    .print{
+        display: none !important;
+    }
+    @media print{
+        .print{
+            display: block !important;
+        }
+    }
 </style>
