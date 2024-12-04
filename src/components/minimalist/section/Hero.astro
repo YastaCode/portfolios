@@ -1,0 +1,27 @@
+---
+import Section from "../Section.astro";
+import {user} from "../../../json/cv-en.json";
+import WorldMap from "../../../icons/WorldMap.astro";
+import Social from "../../Social.astro";
+
+const {presentation,label,image,location} = user;
+const {firstName,middleName,lastName,secondSurname} = presentation;
+const {city,municipality,rue,country,postCode} = location;
+---
+
+<Section>
+    <div class="row">
+        <div class="presentation">
+            <h1>{middleName} {lastName} {secondSurname}</h1>
+            <h2>{label}</h2>
+            <address>
+                <WorldMap />
+                {postCode} {municipality} - {country}
+            </address>
+            <Social />
+        </div>
+        <figure>
+            <img src={image} alt={firstName}>
+        </figure>
+    </div>
+</Section>
