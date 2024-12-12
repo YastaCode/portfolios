@@ -1,27 +1,55 @@
 ---
 import Section from "../Section.astro";
 import {user} from "../../../json/cv-en.json";
-import WorldMap from "../../../icons/WorldMap.astro";
-import Social from "../../Social.astro";
+import Map from "../../icons/Map.astro";
+import Icon from "../../../components/Icon.astro";
+import SocialIcons from "../../SocialIcons.astro";
 
-const {presentation,label,image,location} = user;
-const {firstName,middleName,lastName,secondSurname} = presentation;
-const {city,municipality,rue,country,postCode} = location;
+const {presentation,labels,image,summary,location,about} = user;
+const {firstName,lastName,secondSurname,nickname} = presentation;
+const {municipality,street,country, countyCode} = location;
 ---
 
 <Section>
-    <div class="row">
-        <div class="presentation">
-            <h1>{middleName} {lastName} {secondSurname}</h1>
-            <h2>{label}</h2>
+    <div class="hero">
+        <div class="info-hero">
+            <h1>{nickname} {lastName} {secondSurname}</h1>
+            <p>{summary}</p>
             <address>
-                <WorldMap />
-                {postCode} {municipality} - {country}
+                <Map title="My Position"/>
+                {municipality}, {country}, {countyCode}
             </address>
-            <Social />
+            <SocialIcons />
         </div>
-        <figure>
-            <img src={image} alt={firstName}>
-        </figure>
+        <img 
+            class="img-hero" 
+            src={image} 
+            alt={`${nickname} Image`} 
+        />
     </div>
 </Section>
+
+<style>
+    .hero{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 4rem;
+    }
+    h1{
+        font-size: 1.6rem;
+        margin-bottom: 0.5rem;
+    }
+    address{
+        margin-top: 0.5rem;
+        font-style: normal;
+        font-size: 0.75rem;
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+    }
+    .img-hero{
+        width: 110px;
+        border-radius: 1rem;
+    }
+</style>
