@@ -1,0 +1,43 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/minimalist/section/Hero.astro";
+import About from "../components/minimalist/section/About.astro";
+import Experience from "../components/minimalist/section/Experience.astro";
+import Education from "../components/minimalist/section/Education.astro";
+import Skills from "../components/minimalist/section/Skills.astro";
+import Projects from "../components/minimalist/section/Projects.astro";
+import KeyboardManager from "../components/KeyboardManager.astro";
+
+const page = {
+    title: "Minimalist CV Design",
+    desc: "Simple web app that renders minimalist CV with print-friendly layout."
+}
+---
+
+<Layout title={page.title} desc={page.desc}>
+    <div class="skeleton">
+        <Hero />
+        <About />
+        <Experience />
+        <Education />
+        <Skills />
+        <Projects />
+    </div>
+    <KeyboardManager />
+</Layout>
+
+<style>
+    .skeleton{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem,55rem));
+        justify-content: center;
+        grid-gap: 1.5rem;
+        transition: .3s;
+    }
+    /* Small devices (landscape phones, 576px and up) */
+    @media (min-width: 768px) {
+        .skeleton{
+            padding-top: 3rem;
+        }
+    }
+</style> 
