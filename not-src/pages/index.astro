@@ -1,0 +1,26 @@
+---
+import Menu from "../components/Menu.astro";
+import Layout from "../layouts/Layout.astro";
+
+const page = {
+	title: "Astro Portfolios",
+	desc: "Discover a showcase of creative web projects made with Astro. Modern designs and interactive features for all tastes."
+}
+---
+
+<Layout title={page.title} desc={page.desc}>
+	<div class="skeleton">
+		<Menu />
+	</div>
+</Layout>
+
+<style>
+    .skeleton{
+        background: white;
+        width: 80%;
+        margin: 1rem auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+</style> 

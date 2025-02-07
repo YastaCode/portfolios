@@ -1,0 +1,273 @@
+{
+    "user": {
+        "presentation": {
+            "firstName": "jesús",
+            "middleName": "Petros",
+            "lastName": "Córdova",
+            "secondSurname": ""
+        },
+        "label": "Full Stack Developer",
+        "image": "/me.webp",
+        "email": {
+            "icon": "envelope",
+            "box": "mailto: jescordova@gmail.com",
+            "color": "#000",
+            "target": "_blanc",
+            "type": "solid"
+        },
+        "phone": {
+            "icon": "phone",
+            "number": "tel: +32 479069836",
+            "color": "#000",
+            "target": "_blanc",
+            "type": "solid"
+        },
+        "site": {
+            "icon": "globe",
+            "url": "https://main--tutos-frontend.netlify.app/",
+            "color": "#000",
+            "target": "_blanc",
+            "type": ""
+        },
+        "summary": "Web Developer oriented Frontend for the creation of high-performance, fast and SEO-optimized sites.",
+        "location": {
+            "municipality" : "Anderlecht",
+            "street": "Laiterie Street",
+            "number": "34",
+            "postalCode": "1070",
+            "region": "Brussels Capital",
+            "city": "Brussels",
+            "country": "Belgium",
+            "countyCode": "BE"
+        },
+        "profiles": [
+            {
+                "platform": "GitHub",
+                "username": "yastacode",
+                "url": "https://github.com/YastaCode"
+                
+            },
+            {
+                "platform": "LinkedIn",
+                "username": "yastacode",
+                "url": "https://linkedin.com/YastaCode"
+                
+            }
+        ],
+        "about": "As a web developer specializing in Astro, I am passionate about creating high-performance, fast, and SEO-optimized websites. With my strong background in HTML, CSS, and JavaScript, I am able to design intuitive and beautiful user interfaces. My mastery of JSON allows me to efficiently manage data and integrate external APIs. In addition, I am familiar with STP (I assume you mean \"Structured Text Processor\" or another similar acronym), which allows me to work with structured data formats and generate dynamic content.." 
+    },
+    "works": [
+        {
+            "name": "Yasta",
+            "sources": [""],
+            "post": "Software Architect",
+            "url": "https://yastacode",
+            "startDate": "2021-01-01",
+            "endDate": null,
+            "summary": "Web Developer oriented Frontend for the creation of high-performance, fast and SEO-optimized sites.",
+            "highlights": [
+                "Architecting migration from CRA to Next.js for improved performance, SEO, and DX",
+                "Established release process enabling faster deployments and reliable rollbacks",
+                "Open source contributions to Relay DevTools and React i18n tooling"
+            ]
+        }
+        
+    ],
+    "education": [
+        {
+            "institution": "Wroctaw University of Technology",
+            "url": "https://www.ambatouinersity.com",
+            "area": "Bachelor's Degree in Control systems engineering and Robotics",
+            "studyType": "graduat",
+            "startDate": "2007",
+            "endDate": "2010",
+            "courses": [
+                
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "name": "HTML",
+            "level": "Advanced",
+            "keywords": [
+                "Web Developer",
+                "Front-End"
+            ]
+        },
+        {
+            "name": "CSS",
+            "level": "Advanced",
+            "keywords": [
+                "Web Developer",
+                "Front-End",
+                "Responsive Design"
+            ]
+        },
+        {
+            "name": "JavaScript",
+            "level": "Medium",
+            "keywords": [
+                "Web Developer",
+                "Front-End",
+                "Back-End",
+                "FullStack"
+            ]
+        },
+        {
+            "name": "MySQL",
+            "level": "Beginner",
+            "keywords": [
+                "Bases de Datos", 
+                "SQL", 
+                "Almacenamiento de Datos", 
+                "Back-End"
+            ]
+        },
+        {
+            "name": "Express",
+            "level": "Medium",
+            "keywords": [
+                "Web Developer", 
+                "Back-End"
+            ]
+        },
+        {
+            "name": "Astro",
+            "level": "Advanced",
+            "keywords": [
+                "Components",
+                "Web Developer",
+                "Front-End",
+                "Back-End",
+                "Responsive Design"
+            ]
+        },
+        {
+            "name": "Bootstrap",
+            "level": "Advanced",
+            "keywords": [
+                "Components",
+                "Web Developer",
+                "Front-End",
+                "Responsive Design"
+            ]
+        },
+        {
+            "name": "Git",
+            "level": "Avanzado",
+            "keywords": [
+                "Control de Versiones", 
+                "Colaboración", 
+                "Código Fuente"
+            ]
+        },
+        {
+            "name": "GitHub",
+            "level": "Avanzado",
+            "keywords": [
+                "Control de Versiones", 
+                "Colaboración", 
+                "Código Fuente", "Git"
+            ]
+        }
+        
+    ],
+    "languages": [
+        {
+            "language": "French",
+            "fluency": "C2"
+        },
+        {
+            "language": "English",
+            "fluency": "A1"
+        },
+        {
+            "language": "Spanish",
+            "fluency": "Native speaker"
+        }
+    ],
+    "interests": [
+        {
+            "name": "Charango",
+            "keywords":[
+                "Andean",
+                "Music",
+                "Musical",
+                "Instruments"
+            ]
+        },
+        {
+            "name": "Films",
+            "keywords": [
+                "Documentaries",
+                "Anunnakis"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "minimalist CV",
+            "isActive": "green",
+            "description": "An open source minimalist, print friendly CV template with a focus on readability and clean design. >9k stars on GitHub",
+            "highlights": ["TypeScript","Next.js","Browser Extension","PostgreSQL"],
+            "url": "mini-cv",
+            "urlImg": "mini-cv.png"
+        },
+        {
+            "name": "blue portfolio",
+            "isActive": "white",
+            "description": "Browser extension for debugging web applications. Includes taking screenshots, screen recording, E2E tests generation and generating bug reports",
+            "highlights": ["TypeScript","Next.js","Browser Extension","PostgreSQL"],
+            "url": "mini-cv",
+            "urlImg": "https://cdn.blog.production.sortlist.cloud/wp-content/uploads/sites/8/2022/02/portfolio.webp"
+        },
+        {
+            "name": "red portfolio",
+            "isActive": "white",
+            "description": "Browser extension for debugging web applications. Includes taking screenshots, screen recording, E2E tests generation and generating bug reports",
+            "highlights": ["TypeScript","Next.js","Browser Extension","PostgreSQL"],
+            "url": "mini-cv",
+            "urlImg": "https://neoresid-v2-dev.s3.eu-west-3.amazonaws.com/media/articles/1580585802565.jpg"
+        },
+        {
+            "name": "yellow portfolio",
+            "isActive": "white",
+            "description": "Browser extension for debugging web applications. Includes taking screenshots, screen recording, E2E tests generation and generating bug reports",
+            "highlights": ["TypeScript","Next.js","Browser Extension","PostgreSQL"],
+            "url": "mini-cv",
+            "urlImg": "https://shop.paperchasepress.com/cdn/shop/products/Hardcover_Portfolio_NoSleeve_1_1842x1076.jpg?v=16285310"
+        },
+        {
+            "name": "pink portfolio",
+            "isActive": "white",
+            "description": "Browser extension for debugging web applications. Includes taking screenshots, screen recording, E2E tests generation and generating bug reports",
+            "highlights": ["TypeScript","Next.js","Browser Extension","PostgreSQL"],
+            "url": "mini-cv",
+            "urlImg": "https://wpvip.edutopia.org/wp-content/uploads/2022/10/robinson-169hero-portfolio-shutterstock.jpg?w=2880&quality=85"
+        },
+        {
+            "name": "orange portfolio",
+            "isActive": "white",
+            "description": "Browser extension for debugging web applications. Includes taking screenshots, screen recording, E2E tests generation and generating bug reports",
+            "highlights": ["TypeScript","Next.js","Browser Extension","PostgreSQL"],
+            "url": "mini-cv",
+            "urlImg": "https://static.wixstatic.com/media/d15f39_04cc4982d10243a1975433c8a87af347~mv2.png/v1/fill/w_568,h_376,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/d15f39_04cc4982d10243a1975433c8a87af347~mv2.png"
+        }
+        
+        
+    ],
+    "references": [
+        {
+            "name": "",
+            "reference": ""
+        }
+    ],
+    "volunteer": [
+        {
+            "organization": "Organization",
+            "position": "Volunteer",
+            "url": ""
+        }
+    ]
+}

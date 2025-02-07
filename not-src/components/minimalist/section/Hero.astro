@@ -1,0 +1,92 @@
+---
+import Section from "../Section.astro";
+import {user} from "../../../json/cv-en.json";
+import SocialIcons from "../../SocialIcons.astro";
+---
+
+<Section>
+    <div class="hero">
+        <div class="info-hero">
+            <h1>
+                {user.presentation.firstName} 
+                {user.presentation.lastName} 
+                {user.presentation.secondSurname}
+            </h1>
+            <p>{user.summary}</p>
+            <address>
+                <a href="/map/" title=`${user.location.region} - ${user.location.postalCode}`>
+                    <box-icon  
+                        name="map"
+                        color="#333"
+                        type="solid"
+                    ></box-icon>
+                </a>
+                {user.location.municipality}, {user.location.country}, {user.location.countyCode}
+            </address>
+            <SocialIcons />
+        </div>
+        <figure>
+            <img 
+                class="img-hero" 
+                src={user.image} 
+                alt={`${user.presentation.middleName} Image`} 
+            />
+        </figure>
+    </div>
+</Section>
+
+<style>
+    .hero{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    }
+    h1{
+        text-transform: capitalize;
+        font-size: 1.6rem;
+        margin-bottom: 0.5rem;
+    }
+    .img-hero{
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        width: 110px;
+        border-radius: 1rem;
+    }
+    .img-hero:hover{
+        opacity: 0.8;
+    }
+    figure{
+        margin: 0;
+        text-align: right;
+    }
+    figcaption{
+        text-align: center;
+        font-size: 0.6rem;
+        color: #999;
+    }
+    address{
+        font-style: normal;
+        font-size: 0.75rem;
+        display: flex;
+        align-items: center;
+        gap: 0.2rem;
+    }
+    a{
+        border: 1px solid #eee;
+        width: 1.3rem;
+        height: 1.3rem;
+        border-radius: 0.3rem;
+        padding: 0.1rem;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        transition: all 1s ease;
+    }
+    a:hover{
+        background: #e5e5e5;
+    }
+    p{
+        text-wrap: balance;
+    }
+</style>

@@ -1,0 +1,98 @@
+---
+import GitHub from "../components/icons/GitHub.astro";
+import LinkedIn from "../components/icons/LinkedIn.astro";
+import {user} from "../json/cv-en.json";
+const {site,email,phone,presentation,profiles} = user;
+const SOCIAL_ICONS: Record<string,any> = {
+    GitHub,
+    LinkedIn
+}
+---
+
+<div class="social-icons">
+    {
+        site && (
+            <a 
+                href={site.url}
+                target={site.target}
+                title={`Go to ${site.url}`}
+                rel=""
+            >
+                <box-icon  
+                    name={site.icon}
+                    color={site.color} 
+                    type={site.type}
+                ></box-icon>
+            </a>
+        )
+    }
+    {
+        email && (
+            <a 
+                href={email.box}
+                target={email.target}
+                title={`Send an email to ${presentation.middleName} at ${email.box}`}
+                rel=""
+            >
+                <box-icon  
+                    name={email.icon}
+                    color={email.color} 
+                    type={email.type}
+                ></box-icon>
+            </a>
+        )
+    }
+    {
+        phone && (
+            <a 
+                href={phone.number}
+                target={phone.target}
+                title={`Call ${presentation.middleName} on the phone at number ${phone.number}`}
+                rel=""
+            >
+                <box-icon  
+                    name={phone.icon}
+                    color={phone.color} 
+                    type={phone.type}
+                ></box-icon>
+            </a>
+        )
+    }
+    {
+        profiles.map(({platform,username,url}) => {
+            const Icon = SOCIAL_ICONS[platform];
+            return (
+                <a 
+                    href={url}
+                    title={`visit the profile of ${presentation.middleName} in ${platform}`}
+                    target="_blank"
+                    rel=""
+                >
+                    <Icon />
+                </a>
+            )
+        })
+    }
+</div>
+
+<style>
+    .social-icons{
+        display: flex;
+        gap: 0.5rem;
+        margin-top: 0.8rem;
+    }
+    a{
+        border: 1px solid #ddd;
+        width: 1.8rem;
+        height: 1.8rem;
+        border-radius: 0.3rem;
+        padding: 0.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 1s ease;
+    }
+    a:hover{
+        background: #e5e5e5;
+    }
+</style>

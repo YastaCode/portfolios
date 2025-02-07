@@ -1,0 +1,114 @@
+---
+import Section from "../Section.astro";
+import {education} from "../../../json/cv-en.json";
+
+---
+
+<Section title="Side Education">
+    <ul class="education">
+        {
+            education.map(({institution,url,area,studyType,startDate,endDate}) => {
+                return (
+                    <article>
+                        <header>
+                            <h3>{institution}</h3>
+                            <div class="times">
+                                <time datetime="">{startDate}</time>
+                                {"-"}
+                                <time datetime="">{endDate}</time>
+                            </div>
+                        </header>
+                        <main>
+                            <h4>{}</h4>
+                            <span>{area}</span>
+                            <ul>
+                                <li>test</li>
+                                {/* {
+                                    highlights.map((item) => 
+                                    <li>{item}</li>
+                                    )
+                                } */}
+                            </ul>
+                        </main>
+                    </article>
+                )
+            })
+        }
+        <li>
+        </li>
+    </ul>
+</Section>
+
+<style>
+    /*
+    .education{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    li{
+    }
+    article{
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    .post{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 1rem;
+        h3{}
+        ul{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 0.18rem;
+            li{}
+            a{
+                display: inline-block;
+                background: #f1f1f1;
+                border: 1px solid #e5e5e5;
+                padding: 2px 15px;
+                font-size: .78rem;
+                border-radius: 0.2rem;
+                transition: all .3s ease;
+                color: #111;
+            }
+            a:hover{
+                background: #e5e5e5;
+                border: 1px solid #d5d5d5;
+            }
+        }
+    }
+    .times{
+        time{
+            font-size: .85rem;
+            color: #777;
+        }
+    }
+    main{
+        h4{
+            font-size: 1.1rem;
+            font-weight: 400;
+            margin-bottom: 0.3rem;
+            color: #222;
+        }
+        span{
+            font-size: 0.8rem;
+        }
+        ul{
+            list-style-type:circle;
+            margin-left: 0.8rem;
+        }
+        li{
+            font-size: .8rem;
+            color: #777;
+        }
+    }
+    */
+</style>

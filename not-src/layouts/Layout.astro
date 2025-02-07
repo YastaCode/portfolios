@@ -1,0 +1,21 @@
+---
+import "../styles/global.css";
+const {title, desc} = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+        <meta name="description" content={desc}>
+		<meta name="viewport" content="width=device-width" />
+		<title>{title}</title>
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	</head>
+	<body>
+		<div class="container">
+            <slot />
+        </div>
+	</body>
+	<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</html>
