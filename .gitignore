@@ -25,3 +25,5 @@ pnpm-debug.log*
 
 # My Resources
 resources.md
+data-exe.json
+myData.json
