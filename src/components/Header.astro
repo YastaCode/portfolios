@@ -1,0 +1,17 @@
+---
+const { breadcrumb } = Astro.props;
+---
+
+<header>
+    <slot />
+</header>
+
+<style>
+    header{
+        padding: 1rem 0;
+        border-bottom: 1px solid #ccc;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+</style>
